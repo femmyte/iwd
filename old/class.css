@@ -1,0 +1,55 @@
+.container {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	gap: 20px;
+}
+aside,
+article,
+section {
+	flex: 1;
+}
+aside {
+	background-color: antiquewhite;
+}
+article {
+	background-color: gold;
+}
+section {
+	background-color: aquamarine;
+}
+
+@media (max-width: 350px) {
+	.container {
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+	}
+	aside {
+		background-color: grey;
+	}
+	article {
+		background-color: purple;
+	}
+	section {
+		background-color: powderblue;
+	}
+}
+@media (min-width: 351px) and (max-width: 430px) {
+	.container {
+		display: flex;
+		flex-direction: row;
+	}
+	aside {
+		background-color: blue;
+	}
+	article {
+		background-color: red;
+	}
+	section {
+		background-color: green;
+	}
+	aside {
+		flex: 2;
+	}
+}
